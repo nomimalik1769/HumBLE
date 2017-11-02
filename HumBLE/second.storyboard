@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialHB.ttc">
+            <string>ArialHebrew</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5qw-wy-KPB">
+            <objects>
+                <viewController id="mYO-Jg-3Sl" customClass="ViewController" customModule="HumBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2JI-kK-Xty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="Age-sV-wJT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="yb2-cw-Ib7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Technician" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ja5-YP-Xjr">
+                                <rect key="frame" x="118.5" y="22.5" width="148.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ0-gK-kii">
+                                <rect key="frame" x="152.5" y="69" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DCZ-1n-QA5"/>
+                                    <constraint firstAttribute="width" constant="80" id="y6V-jk-dYq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="upload image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7C6-Sq-c0M">
+                                <rect key="frame" x="138.5" y="171" width="108.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v8j-fO-mFF" firstAttribute="top" secondItem="Age-sV-wJT" secondAttribute="bottom" constant="-197" id="5wd-lt-xeC"/>
+                            <constraint firstItem="WJ0-gK-kii" firstAttribute="top" secondItem="ja5-YP-Xjr" secondAttribute="bottom" constant="28" id="8Z3-wL-vmK"/>
+                            <constraint firstItem="v8j-fO-mFF" firstAttribute="trailing" secondItem="ja5-YP-Xjr" secondAttribute="trailing" constant="108" id="AGn-fF-wCh"/>
+                            <constraint firstItem="Age-sV-wJT" firstAttribute="top" secondItem="2JI-kK-Xty" secondAttribute="top" id="Ec6-bo-BDz"/>
+                            <constraint firstItem="7C6-Sq-c0M" firstAttribute="centerX" secondItem="WJ0-gK-kii" secondAttribute="centerX" id="Ec7-l1-Dbm"/>
+                            <constraint firstItem="v8j-fO-mFF" firstAttribute="trailing" secondItem="7C6-Sq-c0M" secondAttribute="trailing" constant="128" id="VcS-jZ-fyE"/>
+                            <constraint firstItem="Age-sV-wJT" firstAttribute="leading" secondItem="v8j-fO-mFF" secondAttribute="trailing" constant="-375" id="hEC-Jy-ILv"/>
+                            <constraint firstItem="Age-sV-wJT" firstAttribute="top" secondItem="ja5-YP-Xjr" secondAttribute="bottom" constant="-41" id="ht7-j7-z1j"/>
+                            <constraint firstItem="v8j-fO-mFF" firstAttribute="top" secondItem="ja5-YP-Xjr" secondAttribute="bottom" constant="-21" id="iFu-gE-vg4"/>
+                            <constraint firstItem="Age-sV-wJT" firstAttribute="leading" secondItem="v8j-fO-mFF" secondAttribute="leading" id="k6h-2r-t0j"/>
+                            <constraint firstItem="7C6-Sq-c0M" firstAttribute="top" secondItem="WJ0-gK-kii" secondAttribute="bottom" constant="22" id="oI6-NZ-QQN"/>
+                            <constraint firstItem="WJ0-gK-kii" firstAttribute="centerX" secondItem="ja5-YP-Xjr" secondAttribute="centerX" id="tHO-n0-q5j"/>
+                            <constraint firstItem="Age-sV-wJT" firstAttribute="trailing" secondItem="v8j-fO-mFF" secondAttribute="trailing" id="wW8-mT-CbM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v8j-fO-mFF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXx-6n-Ma9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-1" width="400" height="225"/>
+        <image name="upload image" width="512" height="512"/>
+    </resources>
+</document>
